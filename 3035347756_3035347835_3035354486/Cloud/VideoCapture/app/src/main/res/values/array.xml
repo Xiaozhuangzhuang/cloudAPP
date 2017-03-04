@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order">
+        <item>order by modified time</item>
+        <item>order by name</item>
+    </string-array>
+
+    <string-array name="change">
+        <item>cloud file</item>
+        <item>local file</item>
+    </string-array>
+</resources>

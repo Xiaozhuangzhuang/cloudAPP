@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="play_image" type="id" />
+    <item name="delete" type="id" />
+    <item name="notopen" type = "id"/>
+</resources>

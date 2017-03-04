@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:id = "@+id/total">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/top"
+        android:background="@drawable/sea"/>
+
+    <LinearLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/top">
+
+        <TextView
+            android:id="@+id/text_cloud"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="Cloud"/>
+
+        <TextView
+            android:id="@+id/text_upload"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:background="@drawable/tab_menu_bg"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="Upload"/>
+
+        <TextView
+            android:id="@+id/text_capture"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:background="@drawable/tab_menu_bg"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="Capture"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tab_menu"
+        android:id="@+id/second">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src = "@drawable/order_new"
+            android:background="@drawable/tab_second"
+            android:id="@+id/order"
+            android:onClick="popupmenu" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src = "@drawable/sync_new"
+            android:background="@drawable/tab_second"
+            android:id="@+id/sync"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/download_new"
+            android:background="@drawable/tab_second"
+            android:id="@+id/downloadButton"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/video_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:layout_below="@id/second"/>
+
+</RelativeLayout>
